@@ -25,19 +25,17 @@ const loop = setInterval(()=>{
         score.value="off" 
 
         clearInterval(loop);
-    }
-    let newScore = 0
-    
-    const scoreNumber = setInterval(()=>{
-       if(score.value != "off"){
-        newScore = newScore + 50;
-        score.innerText = `${newScore}`
-        console.log(newScore)
-    } 
-    },100)
-        
+    }        
 },
 10)
+    let newScore = 0 
+    const totalScore = setInterval(()=>{
+    if(score.value != "off"){ 
+     newScore = newScore + 20;
+     score.innerText = `${newScore}`
+    }else{
+        clearInterval(totalScore);
+    }},50)
 
 document.addEventListener('keydown', jump);
 document.addEventListener('touchstart', jump);
