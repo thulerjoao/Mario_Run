@@ -11,9 +11,7 @@ const jump = () => {
 const loop = setInterval(()=>{
     const pipePosition = pipe.offsetLeft;
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px','');
-    console.log(marioPosition)
     if(pipePosition <= 199 && pipePosition > 0 && marioPosition < 100){
-        console.log('entrei aqui')
         pipe.style.animation = 'none'
         pipe.style.left = `${pipePosition}px`
 
@@ -22,9 +20,12 @@ const loop = setInterval(()=>{
         mario.src='./image/game-over.png'
         mario.style.width = "70px"
         mario.style.left = '134px'
+
+        clearInterval(loop);
     }
 },
 10)
 
 document.addEventListener('keydown', jump);
+document.addEventListener(TouchEvent(jump));
 
