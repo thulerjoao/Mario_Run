@@ -10,7 +10,7 @@ const jump = () => {
 }
 
 setTimeout(()=>{
-    pipe.style.animation = 'pipe-animation 1.5s linear infinite';
+    // pipe.style.animation = 'pipe-animation 1.5s linear infinite';
     pipe.style.display = 'flex';
 },1200)
 
@@ -27,7 +27,7 @@ const loop = setInterval(()=>{
         mario.style.width = "70px"
         mario.style.left = '134px'
 
-        score.value="off" 
+        score.value="undefinned" 
 
         clearInterval(loop);
     }        
