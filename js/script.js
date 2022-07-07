@@ -9,6 +9,11 @@ const jump = () => {
     },700)
 }
 
+setTimeout(()=>{
+    pipe.style.animation = 'pipe-animation 1.5s linear infinite';
+    pipe.style.display = 'flex';
+},1200)
+
 const loop = setInterval(()=>{
     const pipePosition = pipe.offsetLeft;
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px','');

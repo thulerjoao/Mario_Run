@@ -56,7 +56,7 @@
 .jump{
     position: absolute;
     animation: none;
-    /* animation: jump 700ms ease-out; */
+    animation: jump 700ms ease-out;
     
 }
 
