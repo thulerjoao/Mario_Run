@@ -16,11 +16,12 @@
 }
 
 .pipe{
+    display: none;
     position: absolute;
     bottom: 0;
     width: 80px;
-    
-    animation: pipe-animation 1.5s linear infinite;
+    animation: none;
+    /* animation: pipe-animation 1.5s linear infinite; */
 }
 
 .mario{
@@ -54,7 +55,8 @@
 
 .jump{
     position: absolute;
-    animation: jump 700ms ease-out;
+    animation: none;
+    /* animation: jump 700ms ease-out; */
     
 }
 

@@ -9,6 +9,8 @@ const jump = () => {
     },700)
 }
 
+
+setTimeout(()=>{
 const loop = setInterval(()=>{
     const pipePosition = pipe.offsetLeft;
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px','');
@@ -30,12 +32,15 @@ const loop = setInterval(()=>{
 10)
     let newScore = 0 
     const totalScore = setInterval(()=>{
-    if(score.value != "off"){ 
+    if(score.value != "undefinned"){
+        console.log(score.value)
      newScore = newScore + 20;
      score.innerText = `${newScore}`
     }else{
         clearInterval(totalScore);
     }},50)
+},1000);
+
 
 document.addEventListener('keydown', jump);
 document.addEventListener('touchstart', jump);
