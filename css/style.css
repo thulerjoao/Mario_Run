@@ -106,4 +106,7 @@
     .score{
         width: 30%;
     }
+    .mario{
+        left: 60px;
+    }
 }
