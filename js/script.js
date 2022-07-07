@@ -9,8 +9,6 @@ const jump = () => {
     },700)
 }
 
-
-setTimeout(()=>{
 const loop = setInterval(()=>{
     const pipePosition = pipe.offsetLeft;
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px','');
@@ -39,7 +37,7 @@ const loop = setInterval(()=>{
     }else{
         clearInterval(totalScore);
     }},50)
-},1000);
+
 
 
 document.addEventListener('keydown', jump);
