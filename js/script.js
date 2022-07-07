@@ -10,7 +10,11 @@ const jump = () => {
 }
 
 setTimeout(()=>{
-    // pipe.style.animation = 'pipe-animation 1.5s linear infinite';
+    // setInterval(()=>{
+    //     let intervalo = +(Math.random() + 1)
+    //     pipe.style.animation = `pipe-animation ${intervalo}s linear infinite`;  
+    // },1500)
+    
     pipe.style.display = 'flex';
 },1200)
 
